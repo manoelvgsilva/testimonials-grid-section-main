@@ -97,3 +97,46 @@ body {
 .woman {
     color: rgb(106, 99, 99);
 }
+
+@media (max-width: 768px) {
+
+    .container-father {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five";
+    }
+
+    .container-father > * {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+        grid-row-end: auto;
+    }
+
+    .container-father > .container-son-one {
+        grid-area: one;
+    }
+
+    .container-father > .container-son-two {
+        grid-area: two;
+    }
+
+    .container-father > .container-son-three {
+        grid-area: three;
+    }
+
+    .container-father > .container-son-four {
+        grid-area: four;
+    }
+
+    .container-father > .container-son-five {
+        grid-area: five;
+    }
+    
+}
