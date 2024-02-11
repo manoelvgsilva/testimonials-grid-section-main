@@ -6,52 +6,86 @@
 
 .container-father {
     display: grid;
-    max-width: 1500px;
-    gap: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 32px;
+    grid-template-columns: repeat(4,250px);
     margin: 0 auto;
+    height: auto;
+    border: 5px solid black;
 }
 
 .container-father > .container-son-one {
     background-color: rgb(100, 48, 159);
     grid-column-start: 1;
     grid-column-end: 3;
+    border-radius: 15px;
+    padding: 20px;
+    border: 5px solid blue;
 }
 
 .container-father > .container-son-five {
-    background-color: whitesmoke;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: -1;
+    background-color: white;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 15px;
+    padding: 20px;
+    border: 5px solid orange;
 }
 
 .container-father > .container-son-two {
     background-color: darkslategrey;
+    border-radius: 15px;
+    padding: 20px;
+    border: 5px solid yellow;
 }
 
 .container-father > .container-son-four {
     background-color: rgb(12, 9, 45);
     grid-column-start: -4;
     grid-column-end: -2;
+    border-radius: 15px;
+    padding: 20px;
+    border: 5px solid green;
 }
 
 .container-father > .container-son-three {
-    background-color: white;
+    background-color: whitesmoke;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: -1;
+    border-radius: 15px;
+    padding: 20px;
+    border: 5px solid red;
 }
 
 .container-title-son-men {
     color: beige;
 }
 
+.container-title-son-woman {
+    color: rgb(3, 3, 50);
+}
+
 .container-title-son-men > span {
     color: rgba(162, 153, 153, 0.791);
+}
+
+.container-title-son-woman > span {
+    color: rgb(5, 5, 52);
 }
 
 .son-men {
     color: white;
 }
 
+.son-woman {
+    color: rgb(1, 1, 36);
+}
+
 .men {
     color: rgba(162, 153, 153, 0.791);;
+}
+
+.woman {
+    color: rgb(106, 99, 99);
 }
