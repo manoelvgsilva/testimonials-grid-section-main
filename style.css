@@ -4,58 +4,65 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    background-color: rgb(193, 243, 226);
+    align-items: center;
+}
+
 .container-father {
     display: grid;
     gap: 32px;
-    grid-template-columns: repeat(4,250px);
+    grid-template-columns: repeat(4, 250px);
     margin: 0 auto;
     height: auto;
-    border: 5px solid black;
+    justify-content: center;
 }
 
-.container-father > .container-son-one {
+.container-father>.container-son-one {
     background-color: rgb(100, 48, 159);
     grid-column-start: 1;
     grid-column-end: 3;
     border-radius: 15px;
     padding: 20px;
-    border: 5px solid blue;
+    box-shadow: 5px 5px 5px rgb(89, 88, 88);
 }
 
-.container-father > .container-son-five {
+.container-father>.container-son-five {
     background-color: white;
     grid-row-start: 2;
     grid-row-end: 3;
     border-radius: 15px;
     padding: 20px;
-    border: 5px solid orange;
+    box-shadow: 5px 5px 5px rgb(89, 88, 88);
 }
 
-.container-father > .container-son-two {
+.container-father>.container-son-two {
     background-color: darkslategrey;
     border-radius: 15px;
     padding: 20px;
-    border: 5px solid yellow;
+    box-shadow: 5px 5px 5px rgb(89, 88, 88);
 }
 
-.container-father > .container-son-four {
+.container-father>.container-son-four {
     background-color: rgb(12, 9, 45);
     grid-column-start: -4;
     grid-column-end: -2;
     border-radius: 15px;
     padding: 20px;
-    border: 5px solid green;
+    box-shadow: 5px 5px 5px rgb(89, 88, 88);
 }
 
-.container-father > .container-son-three {
+.container-father>.container-son-three {
     background-color: whitesmoke;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: -1;
     border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(89, 88, 88);
     padding: 20px;
-    border: 5px solid red;
 }
 
 .container-title-son-men {
@@ -66,11 +73,11 @@
     color: rgb(3, 3, 50);
 }
 
-.container-title-son-men > span {
+.container-title-son-men>span {
     color: rgba(162, 153, 153, 0.791);
 }
 
-.container-title-son-woman > span {
+.container-title-son-woman>span {
     color: rgb(5, 5, 52);
 }
 
@@ -83,7 +90,8 @@
 }
 
 .men {
-    color: rgba(162, 153, 153, 0.791);;
+    color: rgba(162, 153, 153, 0.791);
+    ;
 }
 
 .woman {
